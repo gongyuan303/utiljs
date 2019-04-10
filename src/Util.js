@@ -9,7 +9,7 @@ var util = {
     var regSpace = new RegExp(" ", "g");
     str = str.replace(reg, "<br>");
     str = str.replace(regSpace, "&nbsp;");
-    return str;
+    return str; 
   },
 
   /************************************************************************
