@@ -3,6 +3,14 @@ var util = {
   helloWorld: (str) => {
     return 'hello world ,欢迎您使用 Util CommonJS!【util】'
   },
+  // 换行的方法(崔慧慧)
+  textareaTo: (str) => {
+    var reg = new RegExp("\n", "g");
+    var regSpace = new RegExp(" ", "g");
+    str = str.replace(reg, "<br>");
+    str = str.replace(regSpace, "&nbsp;");
+    return str;
+  },
 
   /************************************************************************
    * Arrays
