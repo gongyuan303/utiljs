@@ -1,12 +1,15 @@
 // eslint-disable-next-line import/no-duplicates
-import util from './Util'
-import RegExp from './RegExp'
+import util from './util'
+import RegExp from './regExp'
 import browser from './browser'
 import stringUtils from './string-utils'
-
-export default {
+let utilCommonJs = new Object({
   util,
   RegExp,
   browser,
   stringUtils
-}
+});
+
+export { utilCommonJs }
+
+export default utilCommonJs
