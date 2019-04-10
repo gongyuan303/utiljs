@@ -2,7 +2,10 @@
 
 // 匹配特定数字
 // 匹配正数
-var RegExp = new Object({
+var regExp = new Object({
+  helloWorld: (str) => {
+    return 'hello world ,欢迎您使用 Util CommonJS!【regExp】'
+  },
 
   // 匹配正整数
   isPositiveNum: function (val) {
@@ -15,7 +18,7 @@ var RegExp = new Object({
   },
 
   // 匹配整数
-  isInteger (val) {
+  isInteger(val) {
     return /^(-|\+)?\d+$/.test(val);
   },
 
@@ -40,10 +43,12 @@ var RegExp = new Object({
   },
 
   // 匹配电子邮件地址
-  isEmailAddress (val) {
+  isEmailAddress(val) {
     return /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(val) || /w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*/.test(val);
   }
 })
 export {
-  RegExp
+  regExp
 }
+
+export default regExp

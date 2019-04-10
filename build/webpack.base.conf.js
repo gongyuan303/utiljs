@@ -27,7 +27,7 @@ module.exports = {
     ],
     alias: {
       'vue$': 'vue/dist/vue',
-      'vue-avatars': path.resolve(__dirname, '../src/Avatar'),
+      'util-commonjs': path.resolve(__dirname, '../src/index.js'),
       'vue-multiselect': path.resolve(__dirname, '../src/Multiselect'),
       'src': path.resolve(__dirname, '../src')
     }

@@ -1,4 +1,7 @@
 var stringUtils = new Object({
+  helloWorld: (str) => {
+    return 'hello world ,欢迎您使用 Util CommonJS!【stringUtils】'
+  },
   lowerCase: function (str) {
     return str.toLowerCase();
   },
@@ -386,6 +389,6 @@ var stringUtils = new Object({
     return str.match(/\b([A-Z])/g).join('');
   }
 })
-export {
-  stringUtils
-}
+export { stringUtils }
+
+export default stringUtils

@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-new-object
-var Util = new Object({
+var util = {
   helloWorld: (str) => {
-    return 'hello world ,欢迎您使用 Util CommonJS!'
+    return 'hello world ,欢迎您使用 Util CommonJS!【util】'
   },
 
   /************************************************************************
@@ -704,8 +704,8 @@ var Util = new Object({
   // 使用Array.map()、split()和Array.join()来加入映射数组, 将3位的 RGB notated 十六进制 color-code 转换为6位数字形式。Array.slice()用于从字符串启动中删除#, 因为它添加了一次
   // extendHex: shortHex => "#" + shortHex.slice(shortHex.startWith("#") ? 1 : 0).split("").map(x => x+x).join(""),
   extendHex: shortHex => {
-    _extendHex = _shortHex => (_shortHex.length <= 4)
-      ? '#' + _shortHex.slice(_shortHex.startsWith('#') ? 1 : 0).split('').map(x => x + x).join('') : shortHex
+    _extendHex = _shortHex => (_shortHex.length <= 4) ?
+      '#' + _shortHex.slice(_shortHex.startsWith('#') ? 1 : 0).split('').map(x => x + x).join('') : shortHex
     let _shortHex = shortHex
     return _extendHex(_shortHex)
   },
@@ -752,7 +752,7 @@ var Util = new Object({
   // validateEmail: 如果给定的字符串是有效的电子邮件, 则返回true, 否则为false
   // 使用正则表达式检查电子邮件是否有效。如果电子邮件有效, 则返回 true, 如果没有, 则返回false
   validateEmail: str => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(str)
-})
-export {
-  Util
 }
+export { util }
+
+export default util

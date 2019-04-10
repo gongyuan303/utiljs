@@ -1,7 +1,7 @@
 {
   "name": "util-commonjs",
-  "version": "1.0.2",
-  "description": "Avatar component for Vue.js",
+  "version": "1.0.11",
+  "description": "util-commonjs component for Vue.js",
   "author": "763811314@qq.com",
   "license": "MIT",
   "repository": {
@@ -25,7 +25,7 @@
     "finish": "npm run lint && npm test && npm run bundle",
     "deploy": "./bin/deploy-doc.sh"
   },
-  "main": "dist/utiljs.min.js",
+  "main": "dist/util-commonjs.min.js",
   "dependencies": {},
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.20",

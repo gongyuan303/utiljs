@@ -16,7 +16,7 @@ config.plugins = (config.plugins || []).concat([
     compress: { warnings: false }
   }),
   new CopyWebpackPlugin([
-    { from: path.resolve(__dirname, '../src', 'Avatar.vue') }
+    { from: path.resolve(__dirname, '../src', 'index.js') }
   ])
 ])
 
