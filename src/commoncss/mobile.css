@@ -1,0 +1,71 @@
+#app{
+    background:yellow !important;
+    width: 12.5rem !important;
+    height: 6.25rem !important;
+}
+.fL{
+    float: left;
+}
+.fR{
+    float: right;
+}
+.cP{
+    cursor: pointer;
+}
+.tL{
+    text-align: left;
+}
+.tR{
+    text-align: right;
+}
+.tC{
+    text-align: center;
+}
+.pL5{
+    padding-left: .3125rem;
+}
+.pL10{
+    padding-left: .625rem;
+}
+.pR5{
+    padding-right: .3125rem;
+}
+.pR10{
+    padding-right: .625rem;
+}
+.pT5{
+    padding-top: .3125rem;
+}
+.pT10{
+    padding-top: .625rem;
+}
+.pB5{
+    padding-bottom: .3125rem;
+}
+.pB10{
+    padding-bottom: .625rem;
+}
+.mT5{
+    margin-top: .3125rem;
+}
+.mT10{
+    margin-top: .625rem;
+}
+.mB5{
+    margin-bottom: .3125rem;
+}
+.mB10{
+    margin-bottom: .625rem;
+}
+.mL5{
+    margin-left: .3125rem;
+}
+.mL10{
+    margin-left: .625rem;
+}
+.mR5{
+    margin-right: .3125rem;
+}
+.mR10{
+    margin-right: .625rem;
+}
